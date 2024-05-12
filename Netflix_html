@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <title>Netflix Summary</Summary></title>
+        <link rel="stylesheet" href="./resources/style1.css">
+    </head>
+    <body>
+        <h1>What happens to Netflix since 2000</h1>
+        <h2>Introduction</h2>
+        <p>
+            Netflix has emerged as a dominant force in the media and video streaming industry, boasting a vast library of over 8000 movies and TV shows and a subscriber base exceeding 200 million globally as of mid-2021. Its success can be attributed to various factors, including its ability to adapt to changing trends and consumer preferences. The platform has capitalized on original programming and international expansion, continually evolving its content strategy to remain competitive. To delve deeper into Netflix's success and understand its content strategy, it is essential to analyze how its content has shifted over time and whether there are preferences for productions. By examining trends in production preferences for streaming videos on Netflix, we can gain insights into the platform's evolving content landscape and potentially predict the popularity of future video productions. The dataset can be found at <a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">https://www.kaggle.com/datasets/shivamb/netflix-shows</a>.
+        </p>
+        <div>
+        <h2>Questions:</h2>
+        <ol>
+        <li>How does Netflix's global strategy align with the distribution of content production across various countries?</li>
+        <li>Has Netflix shifted its focus towards TV shows over movies after 2001? And was the strategy successful?</li>
+        <li>Has there been a noticeable evolution in the total duration of movies and TV shows on the platform after 2001?</li>
+        <li>How does Netflix's target audience changing based on rating since 2001?</li>
+        </ol>
+        <img src="./resources/img/Netflix_2015_logo.svg.jpeg" class="img-centered">
+        <p class="p-caption">
+            <a href="https://en.m.wikipedia.org/wiki/File:Netflix_2015_logo.svg">Netflix's</a> logo in 2015 Pompey the Great.
+        </p>
+        </div>
+        <h2>Netflix Shows Dataset Overview:</h2>
+        <p>The Netflix-shows dataset is an open resource posted on Kaggle. It has over 431K downloads and is widely used in different research areas. The dataset contains 8807 Unique Movies/TV Shows starting in 1925 and ending in 2021.</p>
+        
+        <h3>Data Columns:</h3>
+        <ul>
+            <li><strong>show id:</strong> The unique ID for every Movie/TV Show</li>
+            <li><strong>type:</strong> The identifier for a Movie or a TV Show, where the overall proportion of Movies is 70% and TV Shows is 30%</li>
+            <li><strong>title:</strong> The title for every Movie/TV Show</li>
+            <li><strong>director:</strong> The director for every Movie (Note: director for TV Show is missing)</li>
+            <li><strong>cast:</strong> The actors involved in the Movie/TV Show</li>
+            <li><strong>country:</strong> The country where the Movie/TV Show was produced, divided into 5 continents</li>
+            <li><strong>date added:</strong> Date a Movie/TV Show was added on Netflix</li>
+            <li><strong>release year:</strong> The actual release year of the Movie/TV Show</li>
+            <li><strong>rating:</strong> TV Rating of the Movie/TV Show (10 in total)</li>
+            <li><strong>duration:</strong> The total duration of every Movie/TV Show - in minutes or number of seasons</li>
+            <li><strong>listed in:</strong> The genre of every Movie/TV Show</li>
+            <li><strong>description:</strong> The summary description of every Movie/TV Show</li>
+        </ul>
+        <div>
+        <h2>Global Strategy</h2>
+        <p>
+            The first questions we aim to address is Netflix's global strategy align with the distribution of content production across various countries. We can observe from the figure that as the years go on, content production increases in nearly every country. The United States, in particular, has the most concentrated amount of content produced. This suggests that Netflix aims to capture and grow its international audience while maintaining a strong presence in the American market.
+        </p>
+        <iframe src="./resources/img/countries.html"
+        height="500" width="810"
+        >
+
+        </iframe>
+        
+        <p class="p-caption">
+            This dataset contains 86 unique countries. The log of content available was used because there was such a large difference between the amount of content available in the United States as compared to other countries.
+        </p>
+        </div>
+        <div>
+        <h2>Movies & TV Shows</h2>
+        <p>
+            Next, we would like to determine whether Netflix has shifted its focus towards TV shows over movies after 2001. The figure shows the proportion of movies and TV shows since 2001. While movies remain the focus of Netflix, there was a notable increase in the number of TV shows on the platform between 2015 and 2019. However, in 2020 and 2021, the proportion of movies and TV shows became almost equal. This suggests that Netflix may have shifted its focus towards TV shows over movies after 2020. By the end of the semester we will present a more in-depth and detailed study and attempt to explain why Netflix make this change and whether this strategy helps Netflix success. The rise of Netflix's stock price since 2001 suggests that investors have strong confidence in the company and expectations for continued success. We can assume from the diverse content library and rising stock price that Netflix is doing well as a company and is ensuring long-term viability and subscriber growth.
+        </p>
+        <img src="./resources/img/Proportion_of_Movies_and_TV_Shows_by_Release_Year.jpeg" class="img-centered">
+        <p class="p-caption">
+            There is a significant increase in the total number of productions from 2016 to 2020, and then go down in 2021. The proportion of TV shows and movies approximately remain the same from 2001 to 2018.
+        </p>
+        </div>
+        <div>
+        <h2>Change in Duration</h2>
+        <p>
+            Third, we would like to examine the existence of a noticeable evolution in the total duration of movies and TV shows on the platform after 2001. The graph shows overall change in duration time of TV shows and movies separately. The average duration for both types of productions remains relatively consistent over time, with an increasing number of outliers observed as time progresses. TV shows typically span 1 or 2 seasons, while movies generally have a duration of around 100 minutes. Consequently, there appears to be no significant shift in preference regarding duration time after 2001.
+        </p>
+        <img src="./resources/img/duration_distribution.jpeg" class="img-centered">
+        <p class="p-caption">
+            The box-plots display the distribution of duration for movies and TV shows categorized by their release year. Each box-plot includes black horizontal lines representing the means of the distributions, while white dots represent outliers. The duration time for TV shows is measured in seasons, whereas for movies, it is measured in minutes.
+        </p>
+        </div>
+        <div>
+        <h2>Target Audience</h2>
+        <p>
+            Finally, we want to find out the changing pattern of Netflix's target audience based on rating since 2001. From Figure 4, we can see that between 2001 and 2017, much more content at a wider variety of rating levels is available for Netflix users to indulge in. This change over the years is most clearly seen in TV Shows from 2001 to 2017. In 2001, only one G-rated TV show was available to view. In 2017, however, this number shot up to 17 TV shows with higher rating levels. In terms of movies, we can see that between 2001 and 2017, more maturely-rated movies have become available to watch as compared to family-friendly movies. From these observations, we can infer that Netflix has shifted its focus towards targeting more mature audiences since 2001. <a href="https://www.hulu.com/ratings">(ratings glossary)</a>.
+        </p>
+        <iframe src="./resources/img/piecharts.html"
+        height="650" width="750"
+        >
+
+        </iframe>
+        
+        <p class="p-caption">
+            The side-by-side pie charts of rating distribution comparison for movies and TV shows is shown. Overall, the total number of content production and the rating distribution increases significantly from 2001 and 2017.
+        </p>
+        </div>
+        <div>
+        <h2>Analysis & Results</h2>
+        <p>
+            Overall, these findings indicate that Netflix has successfully adapted its content strategy to evolving market trends and consumer preferences, contributing to its strong performance and continued growth in the streaming industry. In the future, in order to build upon the research conducted on this dataset, several questions can be explored to further understand Netflix's strategic decisions, market performance, and audience engagement. We could explore the type of content and rating distributions in specific countries to gain deeper insights into how Netflix tailors its content offerings to meet the preferences of diverse audiences. It could also be useful to compare Netflix's content strategy to its competitors (e.g., Disney+, Hulu, or HBO Max) to obtain more insights for strategic improvements.
+        </p>
+        <a href="https://www.netflix.com/">Open Netflix</a>
+        <br><br>
+        </div>
+    </body>
+
+
+</html>
